@@ -15,9 +15,13 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 		<spring-cloud.version>2022.0.3</spring-cloud.version>
+		<sonar.projectKey>paritosh-pranjal_spring-boot-monolithic</sonar.projectKey>
 		<sonar.organization>paritosh-pranjal</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
 	</properties>
 	<dependencies>
 		<dependency>
