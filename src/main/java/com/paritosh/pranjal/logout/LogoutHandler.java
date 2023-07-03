@@ -3,6 +3,7 @@ package com.paritosh.pranjal.logout;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.client.registration.ClientRegistration;
 import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
@@ -18,6 +19,7 @@ import java.io.IOException;
  * This controller will also log users out of Auth0 by calling the Auth0 logout endpoint.
  */
 @Controller
+@Configuration
 public class LogoutHandler extends SecurityContextLogoutHandler {
 
     private final ClientRegistrationRepository clientRegistrationRepository;
