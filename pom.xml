@@ -21,7 +21,6 @@
 		<sonar.projectKey>paritosh-pranjal_spring-boot-monolithic</sonar.projectKey>
 		<sonar.organization>paritosh-pranjal</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-
 	</properties>
 	<dependencies>
 		<dependency>
@@ -77,6 +76,12 @@
 			<groupId>com.auth0</groupId>
 			<artifactId>mvc-auth-commons</artifactId>
 			<version>1.2.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
+		<dependency>
+			<groupId>org.jacoco</groupId>
+			<artifactId>jacoco-maven-plugin</artifactId>
+			<version>0.8.8</version>
 		</dependency>
 
 	</dependencies>
