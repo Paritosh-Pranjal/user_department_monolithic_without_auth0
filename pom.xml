@@ -17,8 +17,18 @@
 		<java.version>17</java.version>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
-		<sonar.organization>spring-boot-monolithic</sonar.organization>
+		<sonar.organization>user-department-monolithic</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.exclusions>
+			./pom.xml,
+			**/com/paritosh/pranjal/dto/**,
+			**/com/paritosh/pranjal/entity/**,
+			**/com/paritosh/pranjal/exception/**
+			**/com/paritosh/pranjal/request/**
+			**/com/paritosh/pranjal/repository/**
+		</sonar.exclusions>
+		<sonar.jacoco.reportPath>target/jacoco-ut.exec</sonar.jacoco.reportPath>
+		<sonar.jacoco.itReportPaths>target/jacoco-it.exec</sonar.jacoco.itReportPaths>
 	</properties>
 	<dependencies>
 		<dependency>
