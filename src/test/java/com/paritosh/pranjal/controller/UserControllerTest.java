@@ -1,5 +1,6 @@
 package com.paritosh.pranjal.controller;
 
+import com.paritosh.pranjal.controller.UserController;
 import com.paritosh.pranjal.entity.Department;
 import com.paritosh.pranjal.entity.User;
 import com.paritosh.pranjal.repository.DepartmentRepository;
@@ -9,6 +10,7 @@ import com.paritosh.pranjal.dto.UserResponse;
 import com.paritosh.pranjal.service.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -16,11 +18,15 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
+
+@ExtendWith(SpringExtension.class)
 @SpringBootTest
 class UserControllerTest {
 
