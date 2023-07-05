@@ -77,8 +77,6 @@
 			<artifactId>jacoco-maven-plugin</artifactId>
 			<version>${jacoco.version}</version>
 		</dependency>
-
-
 		<!-- Mockito -->
 		<dependency>
 			<groupId>org.mockito</groupId>
