@@ -30,11 +30,11 @@
 		<sonar.language>java</sonar.language>
 		<sonar.sources>src/main/java</sonar.sources>
 		<sonar.coverage.exclusions>
-			com/paritosh.pranjal/dto/**/*
-			com/paritosh.pranjal/request/**/*
-			com/paritosh.pranjal/entity/**/*
-			com/paritosh.pranjal/exception/**/*
-			com/paritosh.pranjal/UserDepartmentApplication/**/*
+			com/paritosh/pranjal/dto/**/*
+			com/paritosh/pranjal/request/**/*
+			com/paritosh/pranjal/entity/**/*
+			com/paritosh/pranjal/exception/**/*
+			com/paritosh/pranjal/UserDepartmentApplication/**/*
 		</sonar.coverage.exclusions>
 
 	</properties>
