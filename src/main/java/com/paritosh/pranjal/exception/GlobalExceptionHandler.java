@@ -1,8 +1,6 @@
 package com.paritosh.pranjal.exception;
 
-import lombok.NoArgsConstructor;
 import org.springframework.http.HttpHeaders;
-
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

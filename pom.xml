@@ -30,9 +30,9 @@
 		<sonar.language>java</sonar.language>
 		<sonar.sources>src/main/java</sonar.sources>
 		<sonar.coverage.exclusions>
-			*/UserDepartmentApplication/.java,
-			com/paritosh/pranjal/dto/**/*,
-			com/paritosh/pranjal/exception/**/*
+			**/UserDepartmentApplication.java,
+			**/dto/**,
+			**/exception/**
 		</sonar.coverage.exclusions>
 
 	</properties>
