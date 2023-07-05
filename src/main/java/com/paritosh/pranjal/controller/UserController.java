@@ -47,6 +47,7 @@ public class UserController {
             }
             userResponse.setDepartment(depts);
             responseList.add(userResponse);
+            System.out.println(responseList);
         });
         return new ResponseEntity<List<UserResponse>>(responseList,HttpStatus.OK);
     }
