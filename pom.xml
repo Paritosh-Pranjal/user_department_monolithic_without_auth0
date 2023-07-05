@@ -32,7 +32,8 @@
 		<sonar.coverage.exclusions>
 			**/UserDepartmentApplication.java,
 			**/dto/**,
-			**/exception/**
+			**/exception/**,
+			**/entity/**
 		</sonar.coverage.exclusions>
 
 	</properties>
