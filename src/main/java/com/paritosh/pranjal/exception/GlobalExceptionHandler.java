@@ -1,5 +1,6 @@
 package com.paritosh.pranjal.exception;
 
+import lombok.NoArgsConstructor;
 import org.springframework.http.HttpHeaders;
 
 import org.springframework.http.HttpStatusCode;
@@ -15,6 +16,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @ControllerAdvice
+@NoArgsConstructor
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatusCode status, WebRequest request) {
