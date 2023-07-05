@@ -30,7 +30,7 @@
 		<sonar.language>java</sonar.language>
 		<sonar.sources>src/main/java</sonar.sources>
 		<sonar.coverage.exclusions>
-			com/paritosh/pranjal/dto/**/*
+			src/main/java/com/paritosh/pranjal/dto/**/*
 			com/paritosh/pranjal/request/**/*
 			com/paritosh/pranjal/entity/**/*
 			com/paritosh/pranjal/exception/**/*
