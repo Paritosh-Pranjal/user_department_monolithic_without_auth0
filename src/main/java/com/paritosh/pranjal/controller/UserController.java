@@ -47,14 +47,13 @@ public class UserController {
             }
             userResponse.setDepartment(depts);
             responseList.add(userResponse);
-            System.out.println(responseList);
         });
-        return new ResponseEntity<List<UserResponse>>(responseList,HttpStatus.OK);
+        return new ResponseEntity<>(responseList,HttpStatus.OK);
     }
 
     @GetMapping("/users/{id}")
     public ResponseEntity<User> getEmployee(@PathVariable("id") Long id){
-        return new ResponseEntity<User>(uService.getSingleUser(id),HttpStatus.OK);
+        return new ResponseEntity<>(uService.getSingleUser(id),HttpStatus.OK);
     }
 
     @PostMapping("/users")
@@ -71,7 +70,7 @@ public class UserController {
 
            departmentRepository.save(d);
        }
-       return new ResponseEntity<String>("Record save successfully" , HttpStatus.CREATED);
+       return new ResponseEntity<>("Record save successfully" , HttpStatus.CREATED);
     }
     @PutMapping("/users/{id}")
     public ResponseEntity<User> updateEmployee(@PathVariable Long id, @RequestBody User user) {
@@ -89,6 +88,6 @@ public class UserController {
     @DeleteMapping("/users")
     public ResponseEntity<HttpStatus> deleteEmployee(@RequestParam("id") Long id){
         userRepository.deleteById(id);
-        return new ResponseEntity<HttpStatus>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

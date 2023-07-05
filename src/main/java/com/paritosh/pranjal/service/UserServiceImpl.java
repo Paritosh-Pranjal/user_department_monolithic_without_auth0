@@ -1,11 +1,11 @@
 package com.paritosh.pranjal.service;
 
 import com.paritosh.pranjal.entity.User;
+import com.paritosh.pranjal.exception.UserNotFoundException;
 import com.paritosh.pranjal.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
             return user.get();
         }
         else {
-            throw new RuntimeException("user not found for the id");
+            throw new UserNotFoundException("User not found for the id");
         }
     }
 
