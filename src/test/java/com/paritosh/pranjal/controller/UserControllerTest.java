@@ -43,6 +43,8 @@ class UserControllerTest {
 
     @BeforeEach
     void setUp() {
+
+//        openMocks:- ensuring that the mock objects are ready for use before each test method is executed.
         MockitoAnnotations.openMocks(this);
     }
 
