@@ -21,7 +21,8 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         body.put("timeStamp",System.currentTimeMillis());
         body.put("status",status.value());
         // get all the errors
-        List<String> errors = ex.getBindingResult()
+        List<String> errors =
+                ex.getBindingResult()
                 .getFieldErrors()
                 .stream()
                 .map(x -> x.getDefaultMessage())
