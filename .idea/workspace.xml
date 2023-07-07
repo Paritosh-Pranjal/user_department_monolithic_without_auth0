@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d88de25e-3e6b-4221-80b3-db605bb75869" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Rxz2IvXnlJx9L5Z5GgP0hiDPW1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "inlay.hints"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.paritosh.pranjal.exception" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.paritosh.pranjal.service" />
+      <recent name="com.paritosh.pranjal.controller" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserControllerTest.testGetUsers">
+    <configuration name="UserDepartmentApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.paritosh.pranjal.UserDepartmentApplication" />
+      <module name="user-department" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.paritosh.pranjal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepartmentControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-department" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.paritosh.pranjal.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.paritosh.pranjal.controller.DepartmentControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.testGetSingleUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-department" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.paritosh.pranjal.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.paritosh.pranjal.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.paritosh.pranjal.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="testGetSingleUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.testGetUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-department" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.paritosh.pranjal.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.paritosh.pranjal.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.paritosh.pranjal.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="testGetUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-department" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.paritosh.pranjal.service" />
+      <option name="MAIN_CLASS_NAME" value="com.paritosh.pranjal.service.UserServiceImpTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.UserDepartmentApplication" />
+      <item itemvalue="JUnit.UserControllerTest.testGetSingleUser" />
+      <item itemvalue="JUnit.UserControllerTest.testGetUsers" />
+      <item itemvalue="JUnit.UserServiceImpTest" />
+      <item itemvalue="JUnit.DepartmentControllerTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserControllerTest.testGetUsers" />
+        <item itemvalue="JUnit.UserControllerTest.testGetSingleUser" />
+        <item itemvalue="Application.UserDepartmentApplication" />
+        <item itemvalue="JUnit.UserServiceImpTest" />
+        <item itemvalue="JUnit.DepartmentControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d88de25e-3e6b-4221-80b3-db605bb75869" name="Changes" comment="" />
+      <created>1688206312082</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688206312082</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/user_department_monolithic$UserDepartmentApplicationTests.ic" NAME="UserDepartmentApplicationTests Coverage Results" MODIFIED="1688289061783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.paritosh.pranjal.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/user_department_monolithic_without_auth0$UserControllerTest.ic" NAME="UserControllerTest Coverage Results" MODIFIED="1688472771867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.paritosh.pranjal.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/user_department_monolithic$UserDepartmentApplicationTests__1_.ic" NAME="UserDepartmentApplicationTests (1) Coverage Results" MODIFIED="1688362463038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.paritosh.pranjal.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/user_department_monolithic_without_auth0$DepartmentControllerTest.ic" NAME="DepartmentControllerTest Coverage Results" MODIFIED="1688472725670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.paritosh.pranjal.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/user_department_monolithic$DepartmentControllerTest.ic" NAME="DepartmentControllerTest Coverage Results" MODIFIED="1688362412657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.paritosh.pranjal.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/user_department_monolithic$UserControllerTest.ic" NAME="UserControllerTest Coverage Results" MODIFIED="1688362446389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.paritosh.pranjal.controller.*</FILTER>
+    </SUITE>
+  </component>
+</project>
