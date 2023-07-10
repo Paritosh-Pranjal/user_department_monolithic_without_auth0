@@ -33,7 +33,8 @@ public class UserServiceImpl implements UserService {
             return user.get();
         }
         else {
-            throw new UserNotFoundException("User not found for the id");
+            throw new UserNotFoundException();
+
         }
     }
 

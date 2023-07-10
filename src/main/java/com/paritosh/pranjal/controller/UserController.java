@@ -12,8 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import java.util.ArrayList;
-import java.util.List;
+
+import java.time.LocalDateTime;
+import java.util.*;
 
 @RestController
 @RequestMapping("/api")
@@ -27,8 +28,6 @@ class UserController {
 
     @Autowired
     private DepartmentRepository departmentRepository;
-
-
 
     @GetMapping("/users")
     public ResponseEntity<List<UserResponse>> getUsers()
@@ -57,21 +56,26 @@ class UserController {
     }
 
     @PostMapping("/users")
-    public ResponseEntity<String> saveEmployee(@Valid @RequestBody UserRequest userRequest)
-    {
-       User user = new User(userRequest);
-       user = userRepository.save(user);
+    public ResponseEntity<Map<String, Object>> saveEmployee(@Valid @RequestBody UserRequest userRequest) {
+        User user = new User(userRequest);
+        user = userRepository.save(user);
 
-       for(String s: userRequest.getDepartment())
-       {
-           Department d = new Department();
-           d.setName(s);
-           d.setUser(user);
+        for (String s : userRequest.getDepartment()) {
+            Department d = new Department();
+            d.setName(s);
+            d.setUser(user);
 
-           departmentRepository.save(d);
-       }
-       return new ResponseEntity<>("Record save successfully" , HttpStatus.CREATED);
+            departmentRepository.save(d);
+        }
+
+        // Create the response object
+        Map<String, Object> response = new HashMap<>();
+        response.put("message", "Record saved successfully");
+        response.put("timeline", LocalDateTime.now());
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
+
     @PutMapping("/users/{id}")
     public ResponseEntity<User> updateEmployee(@PathVariable Long id, @RequestBody User user) {
         User existingUser = uService.getSingleUser(id);
@@ -85,9 +89,16 @@ class UserController {
     }
 
 
-    @DeleteMapping("/users")
-    public ResponseEntity<HttpStatus> deleteEmployee(@RequestParam("id") Long id){
+    @DeleteMapping("/users/{id}")
+    public ResponseEntity<String> deleteEmployee(@PathVariable("id") Long id) {
+        Optional<User> optionalUser = userRepository.findById(id);
+        if (optionalUser.isEmpty()) {
+            return ResponseEntity.badRequest().body("User not found with ID: " + id);
+        }
+
         userRepository.deleteById(id);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        return ResponseEntity.ok("User is deleted with ID: " + id);
     }
+
+
 }

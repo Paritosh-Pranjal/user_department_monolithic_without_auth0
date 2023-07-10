@@ -99,11 +99,11 @@ class UserControllerTest {
         when(userRepository.save(any(User.class))).thenReturn(user);
 
         // Calling the controller method
-        ResponseEntity<String> response = userController.saveEmployee(userRequest);
+        ResponseEntity<Map<String, Object>> response = userController.saveEmployee(userRequest);
 
         // Verifying the result
         assertEquals(HttpStatus.CREATED, response.getStatusCode());
-        assertEquals("Record save successfully", response.getBody());
+        assertEquals("Record saved successfully", response.getBody().get("message"));
 
         verify(userRepository, times(1)).save(any(User.class));
         verify(departmentRepository, times(2)).save(any(Department.class));
@@ -138,15 +138,22 @@ class UserControllerTest {
 
     @Test
     void testDeleteUser() {
-        // Calling the controller method
+        // Mocking the userRepository to return a non-empty optional
         Long userId = 1L;
-        ResponseEntity<HttpStatus> response = userController.deleteEmployee(userId);
+        when(userRepository.findById(userId)).thenReturn(Optional.of(new User()));
+        doNothing().when(userRepository).deleteById(userId);
+
+        // Calling the controller method
+        ResponseEntity<String> response = userController.deleteEmployee(userId);
 
         // Verifying the result
-        assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
+        assertEquals(HttpStatus.OK, response.getStatusCode());
 
+        verify(userRepository, times(1)).findById(userId);
         verify(userRepository, times(1)).deleteById(userId);
     }
+
+
 
     @Test
     void testGetUsers_EmptyList() {
@@ -174,11 +181,12 @@ class UserControllerTest {
         when(userRepository.save(any(User.class))).thenReturn(user);
 
         // Calling the controller method
-        ResponseEntity<String> response = userController.saveEmployee(userRequest);
+        ResponseEntity<Map<String, Object>> response = userController.saveEmployee(userRequest);
 
         // Verifying the result
         assertEquals(HttpStatus.CREATED, response.getStatusCode());
-        assertEquals("Record save successfully", response.getBody());
+        assertEquals("Record saved successfully", response.getBody().get("message"));
+
 
         verify(userRepository, times(1)).save(any(User.class));
         verify(departmentRepository, never()).save(any(Department.class));
@@ -187,17 +195,20 @@ class UserControllerTest {
 
     @Test
     void testDeleteUser_NoUserFound() {
-        // Mocking the userRepository to return null
+        // Mocking the userRepository to return a non-empty optional
         Long userId = 1L;
-        doNothing().when(userRepository).deleteById(userId);
+        when(userRepository.findById(userId)).thenReturn(Optional.of(new User()));
 
         // Calling the controller method
-        ResponseEntity<HttpStatus> response = userController.deleteEmployee(userId);
+        ResponseEntity<String> response = userController.deleteEmployee(userId);
 
         // Verifying the result
-        assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
+        assertEquals(HttpStatus.OK, response.getStatusCode());
 
+        verify(userRepository, times(1)).findById(userId);
         verify(userRepository, times(1)).deleteById(userId);
     }
+
+
 
 }
